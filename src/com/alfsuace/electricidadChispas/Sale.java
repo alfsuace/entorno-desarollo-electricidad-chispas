@@ -1,11 +1,6 @@
 package com.alfsuace.electricidadChispas;
 
-public class Main {
-    public static void main (String[] args) {
-        System.out.println("Hello world!");
-    }
-
-    public static interface Sale {
+public interface Sale {
         public void setCode();
         public String getCode();
         public void setName();
@@ -15,5 +10,6 @@ public class Main {
         public void setVatType();
         public Integer getVatType();
 
-    }
 }
+
+
