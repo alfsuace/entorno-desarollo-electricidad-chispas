@@ -19,14 +19,29 @@ public class Invocie {
     private Integer totalPrice;
     private Integer totalPriceVat;
 
+    //se necesita un indice, le dejo publico para que pueda hacer la búsqueda
+    private Integer index = 0;
+
     public void addProduct(Product product){
         this.product.add(product);
     }
-
-    public void addService(Service service){
-        this.service.add((service));
+    public Product getProduct(){
+        return product.get(index);
+    }
+    public Integer getProductSize(){
+        return product.size();
     }
 
+    public void addService(Service service){
+        this.service.add(service);
+    }
+
+    public Service getService(){
+        return service.get(index);
+    }
+    public Integer getServiceSize(){
+        return service.size();
+    }
 
     public String getInvoiceCode () {
         return invoiceCode;
@@ -52,6 +67,7 @@ public class Invocie {
         this.client = client;
     }
 
+    //getters y setters de precios
     public Integer getTotalPrice () {
         return totalPrice;
     }
