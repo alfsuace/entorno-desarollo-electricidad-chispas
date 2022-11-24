@@ -1,18 +1,20 @@
 package com.alfsuace.electricidadChispas;
 
 public interface Clients {
-    public void setClientCode();
+
+    void setClientCode (String cifOrDni);
+
     public String getClientCode();
-    public void setId();
-    public String getId();
-    public void setMailingAddress();
+
+    void setMailingAddress (String mailingAddress);
+
     public String getMailingAddress();
-    public void setTown();
+    public void setTown(String town);
     public String getTown();
-    public void setProvince();
+    public void setProvince(String province);
     public String getProvince();
-    public void setEmail();
+    public void setEmail(String email);
     public String getEmail();
-    public void setPhoneNumber();
+    public void setPhoneNumber(String phoneNumber);
     public String getPhoneNumber();
 }
