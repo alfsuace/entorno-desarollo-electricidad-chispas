@@ -1,6 +1,6 @@
 package com.alfsuace.electricidadChispas;
 
-public interface Clients {
+public interface Client {
 
     void setClientCode (String cifOrDni);
 

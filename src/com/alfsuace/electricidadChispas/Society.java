@@ -1,6 +1,6 @@
 package com.alfsuace.electricidadChispas;
 
-public class Society implements Clients{
+public class Society implements Client{
     //-businessName: String
     //-cif: String
     //-mailingAddress: String

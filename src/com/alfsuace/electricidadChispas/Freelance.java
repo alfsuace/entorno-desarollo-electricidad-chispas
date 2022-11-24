@@ -1,6 +1,6 @@
 package com.alfsuace.electricidadChispas;
 
-public class Freelance implements Clients {
+public class Freelance implements Client {
 
 
     //-name: String
