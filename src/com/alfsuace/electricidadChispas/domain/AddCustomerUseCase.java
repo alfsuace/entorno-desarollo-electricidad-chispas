@@ -1,8 +1,8 @@
-package domain;
+package com.alfsuace.electricidadChispas.domain;
 
 import com.alfsuace.electricidadChispas.Client;
-import data.ClientDataStore;
-import data.MemClientDataStore;
+import com.alfsuace.electricidadChispas.data.ClientDataStore;
+import com.alfsuace.electricidadChispas.data.MemClientDataStore;
 
 public class AddCustomerUseCase {
 

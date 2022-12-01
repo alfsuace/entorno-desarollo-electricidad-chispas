@@ -1,4 +1,4 @@
-package data;
+package com.alfsuace.electricidadChispas.data;
 
 import com.alfsuace.electricidadChispas.Client;
 
