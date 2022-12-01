@@ -1,4 +1,6 @@
-package com.alfsuace.electricidadChispas;
+package com.alfsuace.electricidadChispas.presentation;
+
+import com.alfsuace.electricidadChispas.domain.models.Invocie;
 
 public class InvoicePrinter {
 

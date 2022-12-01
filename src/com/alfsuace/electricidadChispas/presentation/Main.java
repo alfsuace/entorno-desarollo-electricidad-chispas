@@ -1,7 +1,16 @@
-package com.alfsuace.electricidadChispas;
-import java.util.Scanner;
+package com.alfsuace.electricidadChispas.presentation;
+import com.alfsuace.electricidadChispas.data.*;
+import com.alfsuace.electricidadChispas.domain.models.*;
+import com.alfsuace.electricidadChispas.domain.usecase.*;
+
+
+import java.util.List;
+
 public class Main {
     public static void main (String[] args) {
+
+    //GUARDADO de DATOS
+    ClientDataStore clientDataStore = new MemClientDataStore();
 
     //AUTONOMO
     Freelance autonomo1 = new Freelance();
@@ -15,6 +24,10 @@ public class Main {
     autonomo1.setEmail("alfonso@gmail.com");
     autonomo1.setPhoneNumber("123456789");
 
+    //USECASE de ADD
+    AddClientUseCase addClientUseCase = new AddClientUseCase();
+    addClientUseCase.execute(autonomo1);
+
     //SOCIEDAD
     Society sociedad1 = new Society();
     sociedad1.setBusinessName("electricidad 1");
@@ -24,6 +37,15 @@ public class Main {
     sociedad1.setProvince("Ávila");
     sociedad1.setEmail("alfonso@gmail.business");
     sociedad1.setPhoneNumber("123456798");
+
+    //USECASE de ADD
+    AddClientUseCase addClientUseCase2 = new AddClientUseCase();
+    addClientUseCase.execute(sociedad1);
+    //USECASE de GET
+    GetClientUseCase getClientUseCase = new GetClientUseCase();
+    //List<Client> clients = getClientUseCase;
+    //for(int i = 0; i < clients.size(); i++){
+        //printCliente(clients.get(i));
 
     //PRODUCTO
     //1

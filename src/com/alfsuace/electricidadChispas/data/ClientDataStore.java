@@ -1,6 +1,6 @@
 package com.alfsuace.electricidadChispas.data;
 
-import com.alfsuace.electricidadChispas.Client;
+import com.alfsuace.electricidadChispas.domain.models.Client;
 
 import java.util.List;
 

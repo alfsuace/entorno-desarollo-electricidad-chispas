@@ -1,4 +1,4 @@
-package com.alfsuace.electricidadChispas;
+package com.alfsuace.electricidadChispas.domain.models;
 
 public class Society implements Client{
     //-businessName: String

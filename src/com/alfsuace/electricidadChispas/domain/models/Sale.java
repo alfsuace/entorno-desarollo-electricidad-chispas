@@ -1,4 +1,4 @@
-package com.alfsuace.electricidadChispas;
+package com.alfsuace.electricidadChispas.domain.models;
 
 public interface Sale {
         public void setCode(String code);
